@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detroit Underground Resistance</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            background-color: #000;
+            color: #fff;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            text-align: center;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 2rem;
+            letter-spacing: 3px;
+        }
+
+        #resistButton {
+            background-color: #ff0000;
+            color: #fff;
+            border: none;
+            padding: 20px 60px;
+            font-size: 24px;
+            font-weight: bold;
+            letter-spacing: 2px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border-radius: 0;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+        }
+
+        #resistButton:hover, #resistButton:active {
+            background-color: #fff;
+            color: #000;
+            transform: scale(1.05);
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 2.2rem;
+            }
+            #resistButton {
+                padding: 16px 40px;
+                font-size: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>DETROIT TECHNO</h1>
+        <button id="resistButton">RESIST</button>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const resistButton = document.getElementById('resistButton');
+            
+            // Single verified Detroit techno YouTube playlist
+            const playlistLink = 'https://www.youtube.com/watch?v=wNdAbwq5iQ4&list=PLbpXM23jtpkyXr9_JpK6F1mc_-4ZRidwL';
+            
+            resistButton.addEventListener('click', () => {
+                // Redirect to the Detroit techno playlist
+                window.location.href = playlistLink;
+            });
+        });
+    </script>
+</body>
+</html> 
